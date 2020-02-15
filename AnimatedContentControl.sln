@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AnimatedContentControl", "AnimatedContentControl\AnimatedContentControl.vbproj", "{52BBDC5B-1D07-4265-9EBB-D8E05DF2AEE5}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WpfTestContentControl", "WpfTestContentControl\WpfTestContentControl.vbproj", "{78FB1BDD-F111-4344-A93F-87D9BAC68CE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{30DEA8C4-589B-4366-851A-61CE74A1EB67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52BBDC5B-1D07-4265-9EBB-D8E05DF2AEE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52BBDC5B-1D07-4265-9EBB-D8E05DF2AEE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52BBDC5B-1D07-4265-9EBB-D8E05DF2AEE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52BBDC5B-1D07-4265-9EBB-D8E05DF2AEE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78FB1BDD-F111-4344-A93F-87D9BAC68CE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78FB1BDD-F111-4344-A93F-87D9BAC68CE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78FB1BDD-F111-4344-A93F-87D9BAC68CE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78FB1BDD-F111-4344-A93F-87D9BAC68CE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84129705-2F77-47FF-8C33-D1AD9145F12A}
+	EndGlobalSection
+EndGlobal

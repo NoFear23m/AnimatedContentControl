@@ -1,0 +1,38 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTestContentControl"
+        xmlns:AnimatedContentControl="clr-namespace:AnimatedContentControl;assembly=AnimatedContentControl"
+        mc:Ignorable="d" d:DataContext="{d:DesignInstance IsDesignTimeCreatable=True,Type=local:SwitchContentViewModel}"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:SwitchContentViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <AnimatedContentControl:AnimatedContentControl Grid.Column="1" Content="{Binding CurrentContent}" AnimationType="SlideLeft" AnimationDuration="0:0:0.6"
+                                                       EaseAnimation="True"/>
+        <Expander ExpandDirection="Right" Background="White">
+            <Expander.Header>
+                <TextBlock Text="Contentlist">
+                    <TextBlock.LayoutTransform>
+                        <RotateTransform Angle="90"/>
+                    </TextBlock.LayoutTransform>
+                </TextBlock>
+            </Expander.Header>
+            <ListBox ItemsSource="{Binding AviableContents}" SelectedItem="{Binding CurrentContent,Mode=TwoWay}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Fullname}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Expander> 
+        
+    </Grid>
+</Window>
